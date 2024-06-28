@@ -1,0 +1,89 @@
+/* #animation{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+    transition-property: width, height, background-color;
+    transition-duration: 1s, 2s, 3s;
+    transition-delay: 2s;
+}
+
+#animation:hover{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+p{
+    transition-property: color, font-size;
+    transition-duration: 2s, 3s;
+    transition-delay: 1s;
+}
+
+p:hover{
+    color: orange;
+    font-size: 40px;
+} */
+
+/* #animation{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    padding: 10px;
+    border: 2px solid black;
+    color: white;
+
+    transition-property: background-color color border-radius;
+    transition-duration: 3s;
+
+}
+
+#animation:hover
+{
+    background-color: yellow;
+    color: black;
+    border-radius: 10px;
+} */
+
+#animation:hover{
+    /* transform: rotate(30deg); */
+    /* transform: translate(100px, 50px); */
+    /* transform: scale(1.2, 0.5); */
+    /* transform: skew(20deg, 20deg); */
+    /* transform: matrix(1.2, 0, 0.5, 1.2, 40, 0); */   
+
+}
+
+#animation {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    animation-name: anim1;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes anim1 {
+    0% {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    25% {
+        margin-left: 1500px;
+        margin-top: 0;
+    }
+    50% {
+        margin-left: 1500px;
+        margin-top: 600px;
+    }
+    75% {
+        margin-left: 0;
+        margin-top: 600px;
+    }
+    100% {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}

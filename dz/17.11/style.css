@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.project-container {
+    display: flex;
+}
+
+.project {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    width: 300px; /* Встановіть власну ширину блоку проекту */
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    transition: transform .5s;
+}
+
+.project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transition: .5s;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.project:hover .project-info {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.project-info h2 {
+    background: orange;
+    padding: 5px;
+    margin: 0;
+}
+
+.project-info p {
+    margin: 10px 0;
+}
+
+.project-info p.hidden {
+    display: none;
+}
+
+.project:hover .project-info p.hidden {
+    display: block;
+}
+
+.project-info::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: orange;
+    border-radius: 2px;
+    margin-top: 5px;
+}

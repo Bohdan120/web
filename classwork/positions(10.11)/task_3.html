@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Основний контейнер смайлика */
+        .smiley {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: relative;
+            border: 3px solid black;
+        }
+
+        /* Очі смайлика */
+        .eye {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 30%;
+            left: 25%;
+            
+        }
+
+        /* Зміна розмірів для іншого ока */
+        .eye.right {
+            left: 55%;
+        }
+
+        /* Рот смайлика */
+        .mouth {
+            width: 50px;
+            height: 25px;
+            background-color: white;
+            border-radius: 0 0 50% 50%;
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            margin-top: 7px;
+            border: 1px solid black;
+
+        }
+        .tongue{
+            width: 30px;
+            height: 15px;
+            background-color: red;
+            border-radius: 0 0 50% 50%;
+            position: absolute;
+            top: 55%;
+            left: 34%;
+            margin-top: 7px;
+            border: 0.5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="smiley">
+        <div class="eye"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+        <div class="tongue"></div>
+    </div>
+</body>
+</html>

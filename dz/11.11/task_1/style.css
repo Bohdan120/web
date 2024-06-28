@@ -1,0 +1,11 @@
+div{
+    margin: 5px;
+}
+p{
+    text-indent: 15px;
+    font-size: 20px;
+}
+
+a{
+    color: inherit;    
+}

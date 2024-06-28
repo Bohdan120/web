@@ -1,0 +1,15 @@
+body {
+    background-image: url('/images/2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+
+}
+.link {        
+    font-size: 100px;   
+    color: rgb(172, 235, 27);
+    text-decoration: none;
+}
+
+
